@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fredoka+One&family=Patua+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fredoka+One&family=Patua+One&display=swap");
+
+#comforta {
+  font-family: "Comfortaa", cursive;
+}
+
+#fredoka {
+  font-family: "Fredoka One", cursive;
+}
+
+#patua {
+  font-family: "Patua One", cursive;
+}
+
+#hero {
+  background-color: #0b4343;
+}
+
+#hero.lead {
+  color: white;
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+body {
+  background-color: #e4f2fb;
+}
+
+#pocobu {
+  font-size: 100px;
+}

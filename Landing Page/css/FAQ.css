@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap");
+@media only screen and (max-width: 600px) {
+  div.accordion .icon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  div.accordion {
+    background-color: #e4f2fb;
+    border: 2px solid #e4f2fb;
+  }
+  .faq.active div.panel {
+    max-height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .faq.active div.accordion {
+    background-color: #e4f2fb;
+    border: 2px solid #e4f2fb;
+  }
+  .faq.active div.accordion h5 {
+    color: #6db5ff;
+  }
+}
+
+#FAQ {
+  font-family: "Baloo Bhaina 2", cursive;
+}
+
+/* #FAQ h2 {
+  margin-bottom: 1rem;
+} */
+.container-fluid {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.container-fluid h2 {
+  color: goldenrod;
+  position: relative;
+  /* width: 23rem; */
+}
+
+.container-fluid h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  /* right: 12px; */
+  width: 67px;
+  height: 2px;
+  background-color: goldenrod;
+}
+
+.accordion {
+  width: 100%;
+  padding: 0 5px;
+  border: 2px solid #6db5ff;
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  align-items: center;
+}
+
+/* .accordion .icon {
+  margin: 10px;
+  width: 30px;
+  height: 10px;
+  background-image: url("../img/angel_down.png");
+  background-size: cover;
+  border-radius: 50%;
+  float: left;
+  transition: all 0.5s ease-in;
+} */
+.accordion .icon {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  color: #e4f2fb;
+  font-size: 15px;
+  /* float: right; */
+  display: block;
+  background: #6db5ff;
+  border-radius: 50%;
+}
+
+.accordion .icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.accordion h5 {
+  font-size: 22px;
+  margin-left: 1rem;
+  padding: 3px 0 0 0;
+  font-weight: normal;
+  color: #1f5c9a;
+}
+/* 
+.accordion .icon {
+  margin-right: 0, 5rem;
+} */
+
+.panel {
+  text-align: justify;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.5s ease-in;
+}
+
+.panel p {
+  position: relative;
+  padding: 0 15px;
+  border-left: 1px solid #6db5ff;
+  margin-left: 25px;
+  font-size: 14px;
+}
+
+.panel li {
+  position: relative;
+  padding: 0 15px;
+  border-left: 1px solid #6db5ff;
+  margin-left: 50px;
+  font-size: 14px;
+}
+
+.faq.active .panel p::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: #6db5ff;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.faq.active .panel p:hover::before {
+  opacity: 1;
+}
+
+.faq.active .panel {
+  max-height: 100vh;
+  animation: fade 1s ease-in-out;
+  color: black;
+}
+
+.faq.active .icon::before {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  color: #e4f2fb;
+  font-size: 15px;
+  /* float: right; */
+  display: block;
+  background: #6db5ff;
+  border-radius: 50%;
+}
+
+.faq.active .icon i:before {
+  content: "\f068";
+  color: #e4f2fb;
+}
+
+.faq.active .accordion {
+  color: #e4f2fb;
+  background-color: #6db5ff;
+}
+
+.faq.active .accordion h5 {
+  color: #fff;
+}
+
+.divider {
+  border-bottom: 1px solid #6db5ff;
+  margin-bottom: 20px;
+}
+
+.faq.active .panel li {
+  color: black;
+}
+
+.panel li {
+  color: black;
+}
