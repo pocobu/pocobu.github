@@ -29,6 +29,10 @@
   font-family: "Baloo Bhaina 2", cursive;
 }
 
+.container-fluid h2 {
+  margin-bottom: 30px;
+}
+
 /* #FAQ h2 {
   margin-bottom: 1rem;
 } */
