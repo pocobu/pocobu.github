@@ -9,6 +9,10 @@
   transform: scale(1.1);
 } */
 
+#alasan {
+  background-color: #adcdcf;
+}
+
 .boxFlex {
   display: flex;
   justify-content: space-evenly;
